@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Victor Xavier — Oficial</title>
+  <style>
+    :root{--bg:#fafafa;--card:#ffffff;--muted:#666;--accent:#0b74de;--maxw:1000px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#111}
+    header{background:#fff;border-bottom:1px solid #eee}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:700;letter-spacing:0.4px}
+    .navlinks a{margin-left:14px;color:var(--muted);text-decoration:none;font-size:0.95rem}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{margin:0;font-size:clamp(28px,4vw,42px)}
+    .subtitle{color:var(--muted);margin-top:8px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,40,0.04)}
+    .spotify-embed{width:100%;min-height:380px;border-radius:8px;border:0;overflow:hidden}
+    section{padding:40px 0}
+    h2{margin:0 0 14px 0;font-size:1.25rem}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .about p{color:var(--muted);line-height:1.6}
+    .videos iframe{width:100%;height:220px;border:0;border-radius:8px}
+    .photos{display:flex;gap:12px;flex-wrap:wrap}
+    .photos .ph{flex:1 1 180px;height:140px;border-radius:10px;background:linear-gradient(135deg,#eee,#ddd);display:flex;align-items:center;justify-content:center;color:#999}
+    footer{padding:28px 0;border-top:1px solid #eee;color:var(--muted)}
+    .socials a{margin-right:12px;text-decoration:none;color:var(--muted)}
+    form{display:grid;gap:10px}
+    input,textarea{padding:10px;border:1px solid #e6e6e6;border-radius:8px;font-size:0.95rem}
+    button{padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;border:0;cursor:pointer}
+    @media(max-width:860px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .spotify-embed{min-height:160px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Victor Xavier</div>
+        <div class="navlinks">
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#albuns">Álbuns</a>
+          <a href="#videos">Vídeos</a>
+          <a href="#fotos">Fotos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="hero">
+      <div>
+        <h1>Victor Xavier</h1>
+        <div class="subtitle">Somos os Mesmos em Dias Diferentes — músicas que conversam com quem escuta.</div>
+        <div style="height:22px"></div>
+        <div class="card">
+          <p style="margin:0 0 12px 0;color:var(--muted)">Ouça no Spotify</p>
+          <iframe class="spotify-embed" src="https://open.spotify.com/embed/artist/6Jk46yb1046FVQ6GCi7Zyy" allow="encrypted-media" loading="lazy"></iframe>
+        </div>
+      </div>
+      <aside>
+        <div class="card" style="text-align:center">
+          <div style="width:100%;height:300px;border-radius:8px;background:linear-gradient(180deg,#f6f6f6,#e9e9e9);display:flex;align-items:center;justify-content:center;font-weight:600;color:#bbb">Sem imagem ainda</div>
+          <div style="margin-top:12px;color:var(--muted);font-size:0.95rem">Site minimalista — imagens serão atualizadas quando você enviar capas e fotos.</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="sobre" class="about">
+      <h2>Sobre</h2>
+      <div class="card">
+        <p>Victor Xavier é cantor e compositor. Este site apresenta os lançamentos mais recentes, vídeos e formas de contato. Texto temporário — envie sua biografia para substituir este parágrafo com informações sobre trajetória, influências e datas importantes.</p>
+      </div>
+    </section>
+
+    <section id="albuns">
+      <h2>Álbuns & Músicas</h2>
+      <div class="card">
+        <p style="color:var(--muted);margin-top:0">Abaixo estão players incorporados. No momento usei o perfil do artista — quando você me fornecer os links diretos do EP e do álbum, substituo pelos embeds dos álbuns específicos.</p>
+        <div style="margin-top:12px;display:grid;gap:12px">
+          <iframe class="spotify-embed" src="https://open.spotify.com/embed/artist/6Jk46yb1046FVQ6GCi7Zyy" allow="encrypted-media" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>Vídeos</h2>
+      <div class="grid videos">
+        <div class="card">
+          <h3 style="margin:0 0 8px 0;font-size:1rem">Somos os mesmos em dias diferentes</h3>
+          <iframe src="https://www.youtube.com/embed/Mxx1dgKpbMg" title="YouTube video" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px 0;font-size:1rem">Voa</h3>
+          <iframe src="https://www.youtube.com/embed/GVYa0TsQVNI" title="YouTube video" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="fotos">
+      <h2>Fotos</h2>
+      <div class="card photos">
+        <div class="ph">Foto 1 (placeholder)</div>
+        <div class="ph">Foto 2 (placeholder)</div>
+        <div class="ph">Foto 3 (placeholder)</div>
+        <div class="ph">Foto 4 (placeholder)</div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <div class="card" style="display:grid;gap:12px">
+        <p style="margin:0;color:var(--muted)">Use o formulário abaixo para enviar uma mensagem — ao enviar, seu cliente de e-mail abrirá com os dados preenchidos (meio simples e 100% gratuito).</p>
+        <form id="contactForm">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" placeholder="Seu e-mail" required />
+          <textarea id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div style="color:var(--muted);font-size:0.95rem">Ou envie direto para: <a href="mailto:victorvsx2@hotmail.com">victorvsx2@hotmail.com</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© Victor Xavier</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/victorxaviervx/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/victorvsx2" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/@EuVictorXavier" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const nome=document.getElementById('nome').value;
+      const email=document.getElementById('email').value;
+      const msg=document.getElementById('mensagem').value;
+      const subject=encodeURIComponent('Contato pelo site — '+nome);
+      const body=encodeURIComponent('Nome: '+nome+'\nE-mail: '+email+'\n\nMensagem:\n'+msg);
+      window.location.href='mailto:victorvsx2@hotmail.com?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
